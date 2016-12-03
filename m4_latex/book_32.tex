@@ -1,0 +1,145 @@
+\documentclass[a4paper,fleqn]{book}
+
+%% Language and font encodings
+\usepackage[english,russian]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage{fullpage} 
+\textwidth=15cm 
+\topmargin=-1cm 
+\usepackage{indentfirst}
+
+%% useful packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{color}
+\definecolor{light-gray}{rgb}{0.8,0.8,0.8}
+\setcounter{chapter}{6} 
+\setcounter{section}{4} 
+\title{}
+\date{}
+\begin{document}
+\pagestyle{empty}
+\begin{quote}
+\large\textit{6.5 Bon voyage}\hfill \textbf{121} \\
+
+\colorbox{light-gray}{
+\begin{minipage}{\textwidth}
+\textbf{Problem 6.29 \; Only real roots}\\
+Show that all roots of $\tan x-x$ are real.\\\\
+\textbf{Promble 6.30 \; Exact Basel sum}\\
+Use the polynomial analogy to evaluate the Basel sum\\
+\[\sum_{1}^\infty \frac{1}{n^2} \quad\hfill(6.44)\]\\
+Compare your result with your solution to Problem 6.22.\\\\
+\textbf{Problem 6.31 \; Misleading alternative expansions}\\
+Squaring and taking the reciprocal of $\tan x=x$ gives $\cot x^2=x^{-2}$; equivalently,\\
+${\cot}^2x-x^{-2}=0$. Therefore,if x is a root of $\tan x-x$, it is a root of ${\cot}^2x-x^{-2}$.\\
+The Taylor expansion of ${\cot}^2x-x^{-2}$ is\\
+\[-\frac{2}{3}\;\left(1-\frac{1}{10}x^2-\frac{1}{63}x^4-\ldots\right).\hfill(6.45)\]\\
+Because the coefficient of $x^2$ is $-1/10$, the tangent-root sum S---for $\cot x=x^{-2}$\\
+and therefore $\tan x=x$---should be $1/10$. \;As we found experimentally and\\
+analytically for $\tan x=x$, the conclusion is correct.  However, what is wrong\\
+with the reasoning?\\\\
+\textbf{Problem 6.32 \; Fourth powers of the reciprocals}\\
+The Taylor series for $\sin x-x\cos x$ continues\\
+\[\frac{x^3}{3}\;\left(1-\frac{x^2}{10}+\frac{x^4}{280}-\ldots\right).\hfill(6.46)\]\\
+Therefore find $\sum x_n^{-4}$ for the positive roots of $\tan x=x$. \;Check numerically\\
+that your result is plausible.\\\\
+\textbf{Problem 6.33 \; Other source equations for the roots}\\
+Find $\sum x_n^{-4}$, where the $x_n$ are the positive roots of $\cos x$.
+\end{minipage}
+}\\\\
+\end{quote}
+\section{Bon voyage}
+\begin{quote}
+\Large\begin{minipage}{\textwidth}I hope that you have enjoyed incorporating street-fighting methods into\\
+your problem-solving toolbox. May you find diverse opportunities to use\\
+dimensional analysis, easy cases, lumping, pictorial reasoning, taking out\\
+the big part, and analogy. As you apply the tools, you will sharpen\\
+them---—and even build new tools.
+\end{minipage}
+\end{quote}
+
+\newpage
+\mbox{}
+\newpage
+
+\begin{quote}
+\Huge\textbf{Bibliography}\\\\\\\\\\\\\\\\
+\normalsize\pagestyle{empty}
+[1]\; P. Agnoli and G. D’Agostini. Why does the meter beat the second?.\\
+ \emph{arXiv:physics/0412078v2}, 2005. Accessed 14 September 2009.\newline\newline
+[2]\; John Morgan Allman. \emph{Evolving Brains}. W. H. Freeman, New York,             1999.\newline\newline 
+[3]\; Gert Almkvist and Bruce Berndt. Gauss, Landen, Ramanujan, the arithmetic-\\geometric
+mean, ellipses, $\pi$, and the Ladies Diary.\emph{American Mathematical Monthly},\newline 95(7):585–608, 1988.\newline\newline
+[4]\; William J.H.Andrewes(Ed.).\emph{The Quest for Longitude: The Proceedings of the Longi-}\newline
+\emph{tude Symposium, Harvard University, Cambridge, Massachusetts, November 4–6, 1993}. 
+Collection of Historical Scientific Instruments,  Harvard University, Cambridge,\\
+Massachusetts, 1996.\newline\newline
+[5]\;  Petr Beckmann. \emph{A History of Pi}. . Golem Press, Boulder, Colo., 4th edition, 1977.\newline\newline
+[6]\;  Lennart Berggren, Jonathan Borwein and Peter Borwein (Eds.). Pi, A Source Book.
+Springer, New York, 3rd edition, 2004.\newline\newline
+[7]\; John Malcolm Blair. \emph{The Control of Oil}. Pantheon Books, New York, 1976.\newline\newline
+[8]\; Benjamin S. Bloom. The 2 sigma problem: The search for methods of group
+instruction as effective as one-to-one tutoring. \emph{Educational Researcher}, 13(6):4–16,1984.\newline\newline
+[9]\; E. Buckingham. On physically similar systems. \emph{. Physical Review},w, 4(4):345–376,
+1914.\newline\newline
+[10]\; Barry Cipra.\emph{. Misteaks:And How to Find Them Before the Teacher Does}.AK Peters,
+Natick, Massachusetts, 3rd edition, 2000.\newline\newline
+[11]\; David Corfield. \emph{Towards a Philosophy of Real Mathematics}.Cambridge University
+Press, Cambridge, England, 2003.\newline\newline
+[12]\; T. E. Faber.\emph{Fluid Dynamics for Physicists}. Cambridge University Press, Cambridge,
+England, 1995.\newline\newline
+[13]\; L. P. Fulcher and B. F. Davis. Theoretical and experimental study of the motion
+of the simple pendulum. \emph{. American Journal of Physics},44(1):51–55, 1976.\newline\newline
+[14]\; George Gamow. \emph{Thirty Years that Shook Physics: The Story of Quantum Theory.}
+Dover, New York, 1985.\newline\newline
+[15]\; Simon Gindikin.\emph{Tales of Mathematicians and Physicists}.Springer, New York, 2007.
+\newpage
+\large\textbf{124} \hfill\\
+\normalsize\pagestyle{empty}\newline\newline
+[16]\; Fernand Gobet and Herbert A. Simon. The role of recognition processes and
+look-ahead search in time-constrained expert problem solving: Evidence from. grand-master-level chess. \emph{Psychological Science}, 7(1):52-55, 1996.\newline\newline
+[17]\; Ronald L. Graham, Donald E. Knuth and Oren Patashnik.\emph{Concrete Mathematics}.
+Addison–Wesley, Reading, Massachusetts, 2nd edition, 1994.\newline\newline
+[18]\; Godfrey Harold Hardy, J. E. Littlewood and G. Polya.\emph{Inequalities}.Cambridge
+University Press, Cambridge, England, 2nd edition, 1988.\newline\newline
+[19]\; William James.\emph{The Principles of Psychology}.Harvard University Press, Cambridge,
+MA, 1981. Originally published in 1890.\newline\newline
+[20]\; Edwin T. Jaynes. Information theory and statistical mechanics. \emph{Physical Review},\\106(4):620–630, 1957.\newline\newline
+[21]\; Edwin T. Jaynes.\emph{Probability Theory: The Logic of Science}. Cambridge University
+Press, Cambridge, England, 2003.\newline\newline
+[22]\; A. J. Jerri. The Shannon sampling theorem—Its various extensions and applica-tions:
+A tutorial review.\emph{Proceedings of the IEEE},65(11):1565–1596, 1977.\newline\newline
+[23]\; Louis V. King. On some new formulae for the numerical calculation of the mutual
+induction of coaxial circles.  \emph{Proceedings of the Royal Society of London. Series A,\\
+Containing Papers of a Mathematical and Physical Character}, 100(702):60–66, 1921.\newline\newline
+[24]\; Charles Kittel, Walter D. Knight and Malvin A. Ruderman. Mechanics, volume 1
+of \emph{The Berkeley Physics Course}. McGraw–Hill, New York, 1965.\newline\newline
+[25]\; Anne Marchand. Impunity for multinationals. ATTAC, 11 September 2002.\newline\newline
+[26]\; Mars Climate Orbiter Mishap Investigation Board. Phase I report. Technical Re-port,
+NASA, 1999.\newline\newline
+[27]\; Michael R.Matthews.\emph{Time for Science Education:How Teaching the History and
+ Philosophy of Pendulum Motion can Contribute to Science Literacy}.   Kluwer, New
+York, 2000.\newline\newline
+[28]\; R. D.  Middlebrook.  Low-entropy expressions: the key to design-oriented analy-\\sis.
+In \emph{Frontiers in Education Conference, 1991.Twenty-First Annual Conference.‘En-gineering  Education in a New World Order’.  Proceedings},  pages 399–403,  Purdue\\
+University, West Lafayette, Indiana, September 21–24, 1991.\newline\newline
+[29]\;  R. D. Middlebroo .  Methods of design-oriented analysis:  The quadratic equa-\\tion
+revisisted. \emph{In Frontiers in Education, 1992. Proceedings. Twenty-Second Annual
+Conference},  pages 95–102, Vanderbilt University, November 11–15, 1992.\newline\newline
+[30] Paul J. Nahin. \emph{When Least is Best: How Mathematicians Discovered Many Clever
+Ways to Make Things as Small (or as Large) as Possible}.e. Princeton University Press,
+Princeton, New Jersey, 2004.\newline\newline
+[31]\; ] Roger B.Nelsen. \emph{Proofs without Words: Exercises in Visual Thinking}. Mathematical
+Association of America, Washington, DC, 1997.
+
+
+
+\end{quote}
+\end{document}
+
+
+
+
