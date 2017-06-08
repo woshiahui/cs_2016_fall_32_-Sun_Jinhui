@@ -1,14 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main()
-{
-    float r;
-	float r2;
-	float r1;
-    printf("r1£¬r2=£º");
-    scanf("%f %f",&r1,&r2);
-    r=1/(1/r1+1/r2);
-    printf("Parallel resistance%f\n",r);
-    return 0;
+int main() {
+	float a,b,c,d;
+	float e;
+	float f;
+	printf("input numbers in form c+di,a+bi\n ");
+	scanf("%f+%fi,%f+%fi", &a, &b, &c, &d);
+	e = (a*a*c+a*c*c+a*d*d+c*b*b)/((a+c)*(a+c)+(b+d)*(b+d));
+	f = (a*a*d+c*c*b+b*b*d+b*d*d)/((a+c)*(a+c)+(b+d)*(b+d));
+	printf("%.3f+%.3fi", e, f);
+	return 0;
 }
